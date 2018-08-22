@@ -50,7 +50,7 @@ Below you can see the model reaching an accuracy of 100% only after 500 steps. T
 ![](https://github.com/sheetaldhar/Identifying-Counterfeit-Products-Online-using-Image-Recognition-with-MobileNet-in-Tensorflow/blob/master/Images/Screen%20Shot%202018-08-20%20at%2012.24.51%20AM.png)
 
 ## Step2 : Classifying Counterfeit vs Genuine
-Once I had the image detection giving me predictions, it was time for me to work with some real world data and see how can I clasifiy 
+Once I had my model give me predictions, it was time for me to work with some real world data and see how can I clasifiy 
 a listing into counterfeit vs Genuine. For this I had scareped data of almost 600K product images and their list price from a website 
 called ioffer.com. ioffer.com is a website that primarily sells counterfeit products. I wrote a python script that pulls an image and its 
 list price from the S3 bucket, sends it to my model and get a prediction. Once I have the prediction, I use a prediction 
